@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/dialog_border"
+    > 
+	 
+    <Button 
+    	android:id="@+id/CancelButton"
+    	android:layout_width="@dimen/dialog_close_button_size"
+    	android:layout_height="@dimen/dialog_close_button_size" 
+    	android:layout_alignParentTop="true"
+    	android:layout_alignParentRight="true"
+    	android:background="@drawable/cancel" />
+     
+    <TextView
+        android:id="@+id/createVocabularyTitle" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="@dimen/create_vocabulary_dialog_margin_top"
+        android:text="@string/create_vocabulary_dialog_create_vocabulary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="32dp" />
+    
+    <EditText 
+	    style="@style/CreateVocabularyDialogEditText"
+	    android:id="@+id/sourceEditText"  
+        android:hint="@string/create_vocabulary_source_hint"
+	    android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+	    android:layout_below="@+id/createVocabularyTitle"
+	    android:layout_marginTop="20dp"/>
+        
+    <EditText 
+	    style="@style/CreateVocabularyDialogEditText"
+	    android:id="@+id/targetEditText"  
+	    android:layout_below="@+id/sourceEditText"
+        android:layout_alignParentRight="true"
+        android:hint="@string/create_vocabulary_target_hint"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp" />
+     
+    <EditText 
+	    style="@style/CreateVocabularyDialogEditText"
+	    android:id="@+id/targetPhoneticsEditText" 
+	    android:layout_below="@+id/targetEditText"  
+	    android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="@string/create_vocabulary_target_phonetics_hint"
+	    android:layout_marginTop="20dp"/>
+     
+    <ImageButton
+        android:id="@+id/imageUpload"
+        android:layout_width="100dp"
+        android:layout_height="100dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/targetPhoneticsEditText" 
+    	android:src="@drawable/camera_image_upload" 
+    	android:adjustViewBounds="true"
+        />
+    
+    <Button
+	    android:id="@+id/CreateVocabularyButton"
+	    style="@style/GreenButton"
+        android:layout_height="40dp"
+	    android:layout_centerInParent="true"
+	    android:layout_marginBottom="15dp"
+	    android:layout_marginTop="20dp" 
+	    android:layout_below="@+id/imageUpload"
+	    android:text="@string/create_vocabulary_dialog_create_vocabulary" />
+ 
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/login_dialog_width"
+    android:layout_height="@dimen/login_dialog_height"
+    android:background="@drawable/dialog_border" >
+
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cancel" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        style="@style/InputFieldLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/login_dialog_email"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/InputField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/emailLabel"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        style="@style/InputFieldLabel"
+        android:layout_below="@+id/emailLabel"
+        android:layout_marginTop="45dp"
+        android:text="@string/login_dialog_password"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/InputField"
+        android:layout_alignLeft="@+id/emailEditText"
+        android:layout_alignTop="@+id/passwordLabel"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/passwordLabel"
+        android:password="true"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        style="@style/RoundButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login_dialog_login" />
+
+</RelativeLayout>

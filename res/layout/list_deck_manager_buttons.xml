@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:paddingLeft="@dimen/expandable_list_item_padding_left"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/moveDeckUpButton"
+                style="@style/MoveUpImageView"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <ImageView
+                android:id="@+id/moveDeckDownButton"
+                style="@style/MoveDownImageView"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/renameDeckButton"
+                style="@style/RenameButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+            
+            <Button
+                android:id="@+id/removeDeckButton"
+                style="@style/DeleteWordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <dimen name="dashboard_button_text">35sp</dimen>
+	<dimen name="dashboard_avatar_width">120dp</dimen>
+	<dimen name="dashboard_avatar_height">120dp</dimen>
+	<dimen name="dashboard_button_width">200dp</dimen>
+	<dimen name="dashboard_button_height">200dp</dimen>
+    <dimen name="dashboard_button_big_width">220dp</dimen>
+    <dimen name="dashboard_button_big_height">220dp</dimen>
+</resources>

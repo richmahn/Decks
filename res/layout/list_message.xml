@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="50dp"
+	android:padding="10dp"
+	android:orientation="horizontal" 
+	android:layout_alignParentLeft="true">
+	<TextView 
+		android:id="@+id/messageFromLabel"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+    	android:layout_marginRight="10dp"
+    	android:layout_marginTop="8dp"
+    	android:text="@string/message_from"
+    	android:textStyle="bold" /> 
+	<TextView 
+		android:id="@+id/messageFrom"
+		android:layout_toRightOf="@+id/messageFromLabel"
+    	android:layout_marginTop="8dp"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp" />
+	<TextView 
+		android:id="@+id/messageToLabel"
+    	android:layout_width="wrap_content"
+    	android:layout_marginRight="10dp"
+		android:layout_below="@+id/messageFromLabel"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+    	android:text="@string/message_to"/>
+	<TextView 
+		android:id="@+id/messageTo"
+		android:layout_below="@+id/messageFromLabel"
+		android:layout_toRightOf="@+id/messageToLabel"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp" 
+    	android:textStyle="bold" />
+	<TextView 
+		android:id="@+id/messageBody"
+		android:layout_below="@+id/messageToLabel"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+		android:padding="10dp" />
+    	
+	<TextView 
+		android:id="@+id/messageDate"
+		android:layout_alignParentRight="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:textSize="12sp" />
+    	 
+</RelativeLayout>  

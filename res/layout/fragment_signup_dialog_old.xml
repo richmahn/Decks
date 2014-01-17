@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="@dimen/signup_dialog_width"
+    android:layout_height="@dimen/signup_dialog_height" 
+	android:background="@drawable/dialog_border"
+    > 
+    <Button 
+    android:id="@+id/CancelButton"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:text="X"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true" />
+    
+    <TextView 
+    android:id="@+id/emailLabel"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:text="@string/login_dialog_email"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:textSize="30sp"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="40dp"
+    android:inputType="textEmailAddress"/>
+    <EditText 
+    style="@style/SignupDialogEditText"
+    android:id="@+id/emailEditText" 
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/emailLabel"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="50dp"/>
+    
+    <TextView 
+    android:id="@+id/nameLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/signup_dialog_name"
+    android:layout_below="@+id/emailLabel"
+    android:layout_marginTop="50dp"
+    android:textSize="30sp"
+    android:layout_marginLeft="40dp"/>
+    <EditText 
+    style="@style/SignupDialogEditText"
+    android:id="@+id/nameEditText" 
+    android:layout_toRightOf="@+id/nameLabel" 
+    android:layout_alignLeft="@+id/emailEditText"
+    android:layout_alignTop="@+id/nameLabel"
+    android:layout_marginRight="50dp"/>
+    
+    <TextView 
+    android:id="@+id/passwordLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/login_dialog_password"
+    android:layout_below="@+id/nameLabel"
+    android:layout_marginTop="50dp"
+    android:textSize="30sp"
+    android:layout_marginLeft="40dp"/>
+    <EditText 
+    style="@style/SignupDialogEditText"
+    android:id="@+id/passwordEditText" 
+    android:layout_toRightOf="@+id/passwordLabel" 
+    android:layout_alignLeft="@+id/nameEditText"
+    android:layout_alignTop="@+id/passwordLabel"
+    android:layout_marginRight="50dp"/>
+    
+    <Button 
+    android:id="@+id/SignupButton"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:text="@string/signup_dialog_signup"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="60dp"
+    android:layout_marginBottom="20dp"/> 
+</RelativeLayout>

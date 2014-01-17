@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map name="actionbar-spinner-options">
+    <entry key="Self-Study">com.chinesepod.decks.CPodSelfStudyLessonsActivity</entry>
+    <entry key="Library">com.chinesepod.decks.CPodLessonLibraryActivity</entry>
+    <entry key="Glossary">com.chinesepod.decks.CPodGlossarySearchActivity</entry>
+    <entry key="Vocabulary">com.chinesepod.decks.CPodVocabularyActivity</entry>
+</map>

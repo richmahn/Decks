@@ -1,0 +1,31 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Content Updates">
+
+        <CheckBoxPreference
+                android:key="new_lesson_notification"                     
+                android:title="New Lesson Notifications" 
+                 /> 
+
+        <CheckBoxPreference
+                android:key="new_show_notification"                     
+                android:title="New Show Notifications" 
+                 />  
+        <CheckBoxPreference
+                android:key="newsletter_notification"                     
+                android:title="Newsletter Notifications" 
+                 />           
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="Other Notifications">
+
+        <CheckBoxPreference
+                android:key="general_notification"                     
+                android:title="General Notifications" 
+                 />  
+   
+    </PreferenceCategory>
+
+</PreferenceScreen>

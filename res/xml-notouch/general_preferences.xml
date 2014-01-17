@@ -1,0 +1,98 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <PreferenceCategory
+            android:title="User information">
+
+        <com.chinesepod.decks.settings.FullnamePreference
+                android:key="fullname"                     
+                android:title="Full Name"
+                android:summary="Your full name" 
+                android:dialogTitle="Full name"
+                android:dialogMessage="Please enter your full name"
+                android:positiveButtonText="Confirm"
+                 /> 
+        <com.chinesepod.decks.settings.UsernamePreference
+                android:key="username"                     
+                android:title="Username"
+                android:summary="Cannot contain spaces and illegal symbols" 
+                android:dialogTitle="User name"
+                android:dialogMessage="Please enter new username"
+                android:positiveButtonText="Confirm"
+                 /> 
+        <com.chinesepod.decks.settings.BioPreference
+                android:key="bio"                     
+                android:title="Bio"
+                android:summary="Tell the community a little more about you" 
+                android:dialogTitle="Bio"
+                android:dialogMessage="Tell the community a little more about you"
+                android:positiveButtonText="Save"
+                 /> 
+<!--         <EditTextPreference
+                android:key="location"                     
+                android:title="Location"
+                android:summary="Find others nearby interested in the same languages as you:" 
+                android:dialogTitle="Location"
+                android:dialogMessage="Find others nearby interested in the same languages as you"
+                android:positiveButtonText="Commit"
+                 />  -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Password"> 
+        <com.chinesepod.decks.settings.PasswordPreference
+            	android:dialogLayout="@layout/dialog_change_password"
+                android:key="password"                     
+                android:title="Password"
+                android:summary="Change password" 
+                android:dialogTitle="New password" 
+                android:positiveButtonText="Change"
+                 /> 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Chinese Language"> 
+        <CheckBoxPreference 
+                android:key="use_traditional"                     
+                android:title="Use Traditional Chinese Characters" 
+                 />  
+    </PreferenceCategory> 
+
+    <PreferenceCategory
+            android:title="Listings"> 
+        <CheckBoxPreference 
+                android:key="show_images_in_lists"                     
+                android:title="Show Lesson Images in Lists" 
+                 />  
+    </PreferenceCategory> 
+<!-- 
+    <PreferenceCategory
+            android:title="App appearance"> 
+        <ListPreference
+                android:title="Screen Orientation"
+                android:summary="Which screen orientation do you prefer?"
+                android:key="screen_orientation"
+                android:defaultValue="portrait"
+                android:entries="@array/orientationListArray"
+                android:entryValues="@array/orientationListValues" />
+    </PreferenceCategory> 
+ -->
+    <PreferenceCategory
+            android:title="@string/local_storage"> 
+        <com.chinesepod.decks.settings.ClearCachePreference
+                android:title="@string/clear_cache_title" 
+                android:key="clear_cache_button" 
+                android:dialogMessage="@string/clear_cache_message"
+				android:dialogTitle="@string/clear_cache_title"
+				android:negativeButtonText="@string/no" 
+				android:positiveButtonText="@string/yes" />
+        <com.chinesepod.decks.settings.ClearAudioPreference
+                android:title="@string/clear_audio_title" 
+                android:key="clear_audio_button" 
+                android:dialogMessage="@string/clear_audio_message"
+				android:dialogTitle="@string/clear_audio_title"
+				android:negativeButtonText="@string/no" 
+				android:positiveButtonText="@string/yes" />
+    </PreferenceCategory>  
+</PreferenceScreen>

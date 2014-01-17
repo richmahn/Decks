@@ -1,0 +1,29 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<CheckBoxPreference
+	        android:key="search_by_lesson_title"      
+	        android:defaultValue="true"       
+	        android:title="Lesson Title" 
+	         />  
+
+	<CheckBoxPreference
+	        android:key="search_by_lesson_id"      
+	        android:defaultValue="true"                              
+	        android:title="Lesson ID" 
+	         />  
+	<CheckBoxPreference
+	        android:key="search_by_lesson_tags"      
+	        android:defaultValue="true"                               
+	        android:title="Lesson Tags" 
+	         />  
+	<CheckBoxPreference
+	        android:key="search_by_lesson_introduction"                    
+	        android:title="Lesson Introduction" 
+	         />  
+	<CheckBoxPreference
+	        android:key="search_by_lesson_data"                     
+	        android:title="Lesson Dialogue and Vocabulary" 
+	         />   
+</PreferenceScreen>

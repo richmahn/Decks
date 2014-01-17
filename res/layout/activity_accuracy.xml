@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/about_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/cp_red_color"
+        android:padding="10dp"
+        android:text="@string/compare_recorded_title"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <TextView
+            android:id="@+id/originalSentenceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/compare_recordings_original_sentence"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/originalSentenceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/originalSentenceLabel"
+            android:layout_toLeftOf="@+id/playButton"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/originalSentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/originalSentenceEditor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/originalSentenceEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edit"
+                android:textColor="#000099"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/playButton"
+            style="@style/SoundButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/yourRecordingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/originalSentenceContainer"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/compare_recordings_your_recording"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yourRecording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourRecordingLabel"
+            android:text="[nothing recorded]" />
+
+        <Button
+            android:id="@+id/compareButton"
+            style="@style/GreenButton"
+            android:layout_below="@+id/yourRecording"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/record" />
+
+        <TextView
+            android:id="@+id/accuracyRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/compareButton"
+            android:layout_marginTop="10dp"
+            android:text="@string/compare_recordings_accuracy"
+            android:textColor="#22BBBB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/recordingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/compareButton"
+            android:layout_toRightOf="@+id/compareButton"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/compareRecordingNotice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/compare_recorded_notice"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+</LinearLayout>

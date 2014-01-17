@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:background="#fff"
+	android:orientation="horizontal" > 
+	
+		<TextView 
+			android:id="@+id/messageBody" 
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+	    	android:paddingLeft="5dp" 
+	    	android:paddingRight="20dp" 
+	    	android:paddingTop="5dp" 
+	    	android:paddingBottom="20dp" 
+	    	android:layout_marginRight="5dp"
+	    	android:layout_marginLeft="15dp"
+	    	android:textSize="20sp"   
+		    />
+	
+		<Button 
+			android:id="@+id/replyButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/GreenButton"     
+	    	android:paddingLeft="20dp" 
+	    	android:paddingRight="20dp" 
+	    	android:paddingTop="5dp" 
+	    	android:paddingBottom="5dp" 
+	    	android:layout_marginBottom="10dp"
+	    	android:layout_marginLeft="15dp"
+	    	android:textSize="18sp"  
+	    	android:layout_below="@+id/messageBody"
+	    	android:text="@string/message_reply"
+		    />
+		
+		<Button 
+			android:id="@+id/archiveButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/GrayButton"     
+	    	android:paddingLeft="20dp" 
+	    	android:paddingRight="20dp" 
+	    	android:paddingTop="5dp" 
+	    	android:paddingBottom="5dp" 
+	    	android:layout_marginBottom="10dp"
+	    	android:layout_marginLeft="15dp"
+	    	android:layout_below="@+id/replyButton"
+	    	android:textSize="18sp"  
+	    	android:text="@string/message_archive"  
+		    />
+		
+		<Button 
+			android:id="@+id/deleteButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/GrayButton"     
+	    	android:paddingLeft="20dp" 
+	    	android:paddingRight="20dp" 
+	    	android:paddingTop="5dp" 
+	    	android:paddingBottom="5dp"  
+	    	android:layout_below="@+id/archiveButton"
+	    	android:layout_marginBottom="10dp"
+	    	android:layout_marginLeft="15dp"
+	    	android:textSize="18sp"  
+	    	android:text="@string/message_delete"  
+		    />
+		
+		<View 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="#000"
+	    	android:layout_below="@+id/deleteButton"/>
+
+</RelativeLayout>

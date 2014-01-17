@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson activity -->
+    <dimen name="lesson_introduction_height">280dp</dimen>
+    <dimen name="lesson_buttons_width">180dp</dimen>
+    <dimen name="seekbar_width">180dp</dimen>
+
+    <dimen name="lesson_button_layout_height">100dp</dimen>
+    <dimen name="lesson_button_layout_width">90dp</dimen>
+    <dimen name="lesson_button_textSize">12sp</dimen>
+    <dimen name="lesson_button_markstudied_textSize">10sp</dimen>
+
+    <dimen name="lesson_handset_image_height">180dp</dimen>
+    
+    <dimen name="sentence_word_button_text">10dp</dimen>
+
+    <dimen name="dashboard_button_text">18sp</dimen>
+
+	<dimen name="dashboard_avatar_width">65dp</dimen>
+	<dimen name="dashboard_avatar_height">65dp</dimen>
+	<dimen name="dashboard_button_width">75dp</dimen>
+	<dimen name="dashboard_button_height">75dp</dimen>
+	<dimen name="dashboard_button_big_width">90dp</dimen>
+    <dimen name="dashboard_button_big_height">90dp</dimen>
+</resources>

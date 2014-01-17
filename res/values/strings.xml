@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Decks</string>
+
+    <string name="decks_button">Decks</string>
+    <string name="word_of_the_day_button">Word-of-the-Day</string>
+    <string name="lists_button">Lists</string>
+    <string name="translate_button">Translate</string>
+    <string name="phrases_button">Phrases</string>
+    <string name="start">Start</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <string name="login_dialog_email">Email: </string>
+    <string name="login_dialog_password">Password: </string>
+    <string name="login_dialog_login">Sign In</string>
+    <string name="settings_changing_profile_settings">Changing user settings…</string>
+    <string name="settings_uploading_avatar">Uploading avatar…</string>
+    <string name="expansion_empty">This lesson does not have Expansion</string>
+    <string name="grammar_empty">This lesson does not have Grammar</string>
+    <string name="dialogue_empty">This lesson does not have Dialogue</string>
+    <string name="download_study_lesson_button">Study Lesson</string>
+    <string name="audio_is_downloading">Fetching and playing audio…</string>
+    <string name="authentication_error">Authentication error. Please sign in again.</string> 
+    <string name="network_error">Network error. Please check your connection and try again.</string>
+    <string name="network_error_or_audio_does_not_exist">Network error or audio file does not exist on server. Please check your connection. If you are connected, it may be no recording was made for your request.</string> 
+    <string name="local_storage">Device Storage</string> 
+    <string name="clear_cache_message">This will clear all your previous requests to the server. This will not delete any audio files, only lesson information. Do you want to continue?</string> 
+    <string name="clear_cache_title">Clear Cache</string> 
+    <string name="clear_audio_message">This will delete all the audio files that have been downloaded for Lessons and Vocabulary to free up space on your memory card. Do you want to continue?</string> 
+    <string name="clear_audio_title">Remove Audio Files</string> 
+    <string name="help_button_title">Help</string> 
+    <string name="cancel">Cancel</string>
+	<string name="logout_button">Log out</string>
+	<string name="change_avatar_button">Change avatar</string>
+	<string name="upload_avatar_button">Upload</string>
+	<string name="choose_avatar_button">Choose another</string>
+	<string name="cancel_avatar_button">Cancel</string>
+	<string name="notification_changed_successfully">Changed successfully</string>
+	<string name="uploaded_successfully">Uploaded successfully</string> 
+	<string name="uploaded_unsuccessfully">Upload failed. Please try again later.</string> 
+	<string name="search_hint">Search…</string>
+	<string name="version">Version </string>
+    	
+    <string name="settings_contact_us">Please contact us with feedback, suggestions or bugs at android@chinesepod.com</string>
+    
+    <string name="drilldown">Breakdown</string>
+    <string name="translate">Translate</string>
+    <string name="save">Save</string> 
+	<string name="saved">Saved</string>
+    <string name="record">Record</string>
+    <string name="play_recorded">Listen</string>
+	<string name="reference_lessons">Lessons</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="compare_recorded_title">Speech Accuracy</string>
+    <string name="compare_recorded_notice">Note: The Accuracy function depends on speech recognition technology which is not 100%% accurate. While this technology is not perfect, the higher your score the more likely you will be understood by a native speaker.</string>
+    <string name="no_record">You haven\'t recorded this audio yet</string>
+    <string name="problem_recording">Cannot record audio</string>
+    <string name="press_start_for_recording">Press Start to begin recording.</string>
+    <string name="recording">Recording</string>
+    <string name="record_again">Record Again</string>
+    <string name="stop_recording">Stop </string>
+    <string name="start_recording">Start </string>
+    <string name="save_recording">Save </string>
+    <string name="filter_button_text">Filter</string>
+    <string name="filter_show_bookmarked_lessons">Show Bookmarked Lessons</string>
+    <string name="filter_show_subscribed_lessons">Show Subscribed Lessons</string>
+    <string name="filter_show_studied_lessons">Included Studied Lessons</string>
+	<string name="filter_show_only_downloaded_lessons">Only Downloaded Lessons</string>    
+    <string name="avatar_preference_label">Your ChinesePod Account Avatar</string>
+    
+    <string name="password_sent">An email has been sent to your email account containing your sign in information.</string>
+	<string name="cannot_retrieve_password">Sorry, we were not able to use the password you entered to retrieve your password. Please try again and verify your email address and network settings.</string>
+	<string name="enter_valid_email">Please enter a valid email address</string>	
+	<string name="enter_valid_password">Please enter your password</string>
+	<string name="unable_to_retrieve_password">There is no such user with that email address. Please correct and try again.</string>
+	<string name="retrieving_password">Retrieving Password</string>
+	
+	<string name="tasks_instructions"><![CDATA[Instructions: <br /><ul><li>Once you\'ve uploaded your task, please click \'share\' and you will have the option of sharing your task with other learners on ChinesePod or social media channels.</li> <li>You may see tasks uploaded by other learners by clicking \'Discuss This Lesson\'.</li> <li>If you are using a smartphone or tablet to shoot video tasks, please make sure that you are holding your device properly to avoid inverted images.</li></ul>]]></string>
+	<string name="tasks_recording_prompt">Say something…</string>
+	<string name="task_uploading">Uploading Task…</string> 
+	<string name="task_deleting">Deleting Task…</string>
+	<string name="task_deleted_successfully">Task has been deleted</string> 
+	<string name="task_deleted_unsuccessfully">Task could not be deleted</string> 
+	<string name="task_sharing">Sharing your task on the discussion board…</string>
+	<string name="task_shared_successfully">Task has been shared successfully</string> 
+	<string name="task_shared_unsuccessfully">Task could not be shared</string> 
+	<string name="task_share_message">Please leave a comment: </string> 
+	<string name="task_share_title">Discussion Board Sharing</string> 
+	<string name="task_submit_message">Please add a message for your teacher: </string> 
+	<string name="task_submit_title">Task Submission</string> 
+	<string name="task_submiting">Submiting task to your teacher…</string>
+	<string name="task_submited_successfully">Task has been submited</string>  
+	<string name="task_submited_unsuccessfully">Task could not be submited</string> 
+	<string name="task_upload">Upload</string>
+	<string name="task_share">Share</string>
+	<string name="task_delete">Delete</string>
+	<string name="task_submit">Submit</string>
+	<string name="task_view">View</string> 
+	<string name="task_share_lesson_discussion">Share to the lesson discussion</string>
+	<string name="task_share_social_networks">Share to social networks</string> 
+    
+    <string name="lesson_plan_empty">This lesson does not have a practice plan</string>
+    <string name="tasks_empty">This lesson does not have a task</string>
+    
+    <string name="camera">Camera</string>
+    <string name="video_recorder">Video</string>
+    <string name="file">File</string>
+    <string name="upload">Upload</string>
+    
+    <string name="lesson_vocabulary_save_all">Save All</string>
+    <string name="choose_deck">Choose a Deck</string>
+    <string name="decks_are_receiving">Receiving list of decks…</string>
+    <string name="word_adding">Adding word to your vocabulary…</string>
+    <string name="word_adding_exists">The word already exists in your Vocabulary.</string>
+    <string name="word_adding_error">There was an error adding the term</string>
+    <string name="word_adding_failed">Failed to add term</string>
+    <string name="word_adding_failed_offline">Failed to add term offline.</string>
+    <string name="word_adding_succeed">Word added successfully!</string>
+    <string name="words_adding">Adding words to your vocabulary…</string>
+    <string name="words_adding_exists">These words already exist in your vocabulary.</string>
+    <string name="words_adding_error">There was an error adding these words</string>
+    <string name="words_adding_failed">Failed to add words</string>
+    <string name="words_adding_succeed">Words were added successfully!</string>
+    <string name="words_added_offline">You are offline, hence the terms have been saved for offline mode. Once you are online again and enter the Vocabulary section of the app, the deck will be synchronized automatically.</string>
+    <string name="word_added_offline">You are offline, hence the term has been saved for offline mode. Once you are online again and enter the Vocabulary section of the app, the deck will be synchronized automatically.</string>
+
+    <string name="messages_activity_title">Messages</string>
+    <string name="no_messages">You don\'t have any messages yet…</string>
+    <string name="message_compose">Compose</string>
+    <string name="message_change_type">Change</string>
+    <string name="message_type_inbox">Inbox</string>
+    <string name="message_type_sent">Sent</string>
+    <string name="message_type_archived">Archived</string>
+    <string name="message_from">From:</string>
+    <string name="message_to">To:</string>
+    <string name="messages_view">View:</string>
+    <string name="message_reply">Reply</string>
+    <string name="message_replying">Sending message…</string>
+    <string name="message_replied_successfully">Message was sent successfully</string>
+    <string name="message_replied_unsuccessfully">There were problems sending your message</string>
+    <string name="message_archive">Archive</string>
+    <string name="message_archiving">Archiving the message…</string>
+    <string name="message_archived_successfully">Archiving was successful</string>
+    <string name="message_archived_unsuccessfully">There were problems archiving the message</string>
+    <string name="messages_loading">Loading messages…</string>
+    <string name="message_reply_title">Reply</string>
+    <string name="message_reply_message">Please compose your message</string>
+    <string name="message_delete">Delete</string>
+    <string name="message_deleting">Deleting the message</string>
+    <string name="message_deleted_successfully">Deletion was successful</string>
+    <string name="message_deleted_unsuccessfully">There were problems deleting the message</string> 
+    
+    <string name="glossary_activity_title">Glossary</string> 
+    <string name="glossary_more">Other Results</string>
+    <string name="glossary_save">Save</string>
+    <string name="glossary_retrieving">Retrieving search results…</string>
+    <string name="glossary_language">Studying </string> 
+    <string name="glossary_change_language">Change</string> 
+    
+    <string name="lesson_discussion">Discussion</string> 
+    <string name="discussion_activity_title">Discussion</string> 
+    <string name="discussion_no_comments">This lesson does not have comments yet</string>
+    <string name="discussion_comment_reply">Reply</string>
+    <string name="discussion_comment_send">Send</string>
+    <string name="discussion_comment_send_from">from</string>
+    <string name="discussion_comment_in_reply_to">in reply to</string>
+    <string name="discussion_comment_sending">Sending comment…</string>
+    <string name="discussion_comment_error">There were problems sending the comment, please try again later.</string>
+    <string name="connection_required">You must be connected to the Internet to use this feature.</string>
+    <string name="complimentary_course_hint">Please select at least one sample course before proceeding.</string>
+    <string name="complimentary_course_done">Done</string>
+    <string name="studying">Studying </string>
+    <string name="replies">Replies</string> 
+    
+    <string name="pull_to_refresh_pull_label">Pull to load previous comments…</string>
+    <string name="pull_to_refresh_release_label">Release to finish loading…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+
+	<string name="task_aftercapture_dialog_title">Success</string> 
+	<string name="task_aftercapture_dialog_message">You have successfully captured your task.</string>
+	<string name="task_aftercapture_dialog_upload">Upload</string> 
+	<string name="task_aftercapture_dialog_later">Later</string> 
+	
+	<string name="task_afteruploaded_dialog_title">Success</string> 
+	<string name="task_afteruploaded_dialog_message">Your file was uploaded successfully.</string>
+	<string name="task_afteruploaded_dialog_share">Share to Community</string> 
+	<string name="task_afteruploaded_dialog_submit">Submit to Teacher</string> 
+	<string name="task_afteruploaded_dialog_later">Later</string> 
+
+	<string name="Lesson_handset_review_label">REVIEW</string>
+	<string name="Lesson_handset_actions_label">ACTIONS</string>
+	
+    <string name="enter_search_query">Search for…</string>
+    <string name="downloading_error_no_space">An error occurred attempting to move the downloaded file to a temporary location.  Please check that your device has enough free space available and try again.</string>
+
+	<string name="radio_quality_audio">Radio Quality</string>
+   	<string name="cd_quality_audio">CD Quality</string>
+
+	<string name="sentences">Sentences</string>
+	<string name="sample_sentences">Sample Sentences</string>
+    <string name="glossary">Glossary</string>
+    
+    <string name="comment">Comment</string>
+    <string name="reply">Reply</string>
+    <string name="add_comment">Comment</string>
+   	<string name="add_comment_submit">Add Comment</string>
+    <string name="add_your_own_comment_below">Add your own comment below:</string>
+    <string name="reply_to_users_comment_below">Reply to %s\'s comment below:</string>
+    <string name="adding_comment">Adding comment…</string>
+    <string name="adding_your_reply">Adding your reply…</string>
+    <string name="loading_more_comments">Loading more comments…</string>
+    <string name="loading_comments">Loading comments…</string>
+
+    <string name="rate_title">Please rate this app</string>
+	<string name="rate_message">Would you take a moment to rate this app? A positive rating supports the development by making it visible to a broader audience.</string>
+	<string name="rate_rate_now">Rate now</string>
+	<string name="rate_rate_later">Rate later</string>
+	<string name="rate_rate_never">Never</string>
+	
+	<string name="instructions">Instructions</string>
+    <string name="self_study_go_to_library">Go to Library</string>
+
+	<string name="compare_recordings_original_sentence">Original Sentence:</string>
+	<string name="compare_recordings_original_word">Original Word:</string>
+		<string name="compare_recordings_your_recording">Your Recording:</string>
+	<string name="compare_recordings_accuracy">Accuracy:</string> 
+
+    <string name="rename_deck">Rename Deck</string>
+    <string name="rename">Rename</string>
+    <string name="remove_deck">Remove Deck</string>
+    <string name="create_deck">Create Deck</string>
+    <string name="deck_removal">Remove Deck</string>
+    <string name="deck_term_removing">Removing term from deck…</string>
+    <string name="deck_term_removing_succesfully">Term removed successfully</string>
+    <string name="deck_term_removing_unsuccesfully">Failed to remove the term from this deck</string>
+    <string name="deck_term_moving">Moving term to another deck…</string>
+    <string name="deck_term_moving_succesfully">Term Moved Successfully</string>
+    <string name="deck_term_moving_unsuccesfully">Term cannot be moved to another deck</string>
+    <string name="deck_term_added_successfully">Term has been added to that deck successfully.</string>
+    <string name="deck_removed_successfully">Deck Removed Successfully</string>
+    <string name="deck_removal_confirmation">Are you sure you want to remove this deck?</string>
+    <string name="deck_renamed_successfully">Deck Renamed Successfully</string>
+    <string name="deck_renamed_unsuccessfully">Deck not successfully renamed</string>
+    <string name="deck_created_successfully">Deck Created Successfully</string>
+    <string name="deck_created_unsuccessfully">Error: Cannot create a deck, a deck with this name probably already exists</string>
+    <string name="deck_renaming">Rename Deck</string>
+    <string name="deck_creation">Create New Deck</string>
+    <string name="deck_creation_explanation">Please enter a name for the new deck</string>
+    <string name="deck_renaming_confirmation">Please enter the new deck name</string>
+    <string name="deck_renaming_rename">Rename</string>
+    <string name="deck_creation_creat">Create</string>
+    <string name="removing_deck">Removing deck…</string>
+    <string name="renaming_deck">Renaming deck…</string>
+    <string name="creating_deck">Creating deck…</string>
+    <string name="remove_term">Delete</string>
+    <string name="removed_term">Deleted!</string>
+    <string name="move_term">Move</string>
+    <string name="copy_term">Copy</string>
+    <string name="decks_out_of_sync">You decks are out of sync with server. Connect to see your recent changes. Using cached data…</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    
+    <string name="signin">Sign In</string>
+    <string name="signup_dialog_name">Name: </string>
+    <string name="signup_dialog_signup">Create Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up_created_successfully">Account successfully created. Please check your email for a confirmation message.</string>
+    <string name="sign_up_failed">Account creationn failed</string>
+    <string name="signup_dialog_fullname">Full Name</string>
+    <string name="signup_dialog_signup_prompt">Create an account to save settings, bookmark lessons, etc.</string>
+    <string name="signup_dialog_confirmation">You will be sent a confirmation email.</string>
+    <string name="signup_dialog_create_account">Create Account</string>
+    <string name="signup_sending_request">Sending request</string>
+    <string name="signup_getting_target_languages">Retrieveing information from server…</string>
+    <string name="signup_invalid_email">Please input a valid email address</string>
+    <string name="signup_invalid_password">Passwords must be at least 6 characters long</string>
+    <string name="signup_invalid_name">Names must be between 4 and 50 characters long</string>
+    <string name="complete_action_using">Complete action using</string>
+    
+    <string name="try_a_free_course">« Try a Free Course</string>
+    
+    <string name="about_this_app">About this App</string>
+    
+    <string name="retrieving_free_course_please_wait">Retrieving Free Course… Please wait.</string>
+    <string name="search_glossary">Search Glossary…</string>
+    
+    <string name="visitor_name_text">Visitor\nTap to create an account…</string>
+
+    <string name="deck_creation_create">Create</string>
+    
+    <string name="no_content">There is no content to display</string>
+    <string name="loading_contents_from_server">Loading contents from server…</string>
+    
+    <string name="list">List</string>
+
+    <string name="create_vocabulary">Create Vocabulary</string>
+    <string name="create_vocabulary_dialog_create_vocabulary">Create Vocabulary</string>
+    <string name="create_vocabulary_dialog_source">English: </string>
+    <string name="create_vocabulary_dialog_target">Chinese</string>
+    <string name="create_vocabulary_dialog_target_phonetics">Pinyin</string>
+    <string name="create_vocabulary_source_hint">English</string>
+    <string name="create_vocabulary_target_hint">Chinese</string>
+    <string name="create_vocabulary_target_phonetics_hint">Pinyin</string>
+    <string name="create_vocabulary_created_successfully">Vocabulary was created successfully.</string>
+    <string name="create_vocabulary_failed">Vocabulary creation failed</string>
+    <string name="create_vocabulary_dialog_create_vocabulary_prompt">Create a vocbulary term</string>
+    <string name="create_vocabulary_invalid_source">You must enter an English word or phrase</string>
+    <string name="create_vocabulary_invalid_target">You must enter a Chinese word or phrase</string>
+    <string name="settings_uploading_image">Uploading image…</string>
+    <string name="settings_general_image_title">Image</string>
+    <string name="settings_general_image_summary">The image linked to your account.</string>
+    <string name="settings_general_image_select_image">Select Image</string>
+    <string name="settings_general_image_from_camera">From Camera</string>
+    <string name="settings_general_image_from_sdcard">From SD Card</string>
+    
+    <string name="next_term">Next Term</string>
+
+    <string name="contents_empty">There is no contents to display.</string>
+    
+    <string name="change_mode">Change Mode</string>
+    <string name="delete_term">Delete Term</string>
+    <string name="auto_review">Auto Review</string>
+    <string name="stop_auto_review">Stop Auto Review</string>
+    <string name="shuffle_deck">Shuffle Deck</string>
+    <string name="sync">Sync</string>
+
+    <string name="deck_empty">This deck does not have any terms</string>
+    <string name="categories">Categories</string>
+    <string name="connecting_to_server">Connecting to server…</string>
+    <string name="sample_sentences_no_result">Not sample sentences were found for the given term</string>
+    <string name="translating_text">Translating Text…</string>  
+
+
+    <!--  TranslateActivity -->
+    <string name="translate_activity">123Translation</string>
+    <string name="button_translate">Translate</string>
+    <string name="button_swap">Swap languages</string>
+    <string name="error">Unable to translate</string>
+    <string name="retrieving_translation">Translating…</string>
+    <string name="found_translation">Translation found</string>
+    <string name="show_history">History</string>
+    <string name="about">About</string>
+    <string name="about_title">BabelPic 1.0</string>
+    <string name="about_message">Source code at fisil.org. For human translations, try 123Translation.com .</string>
+    <string name="send_email">Email 123Translation</string>
+    <string name="visit">Visit 123Translation</string>
+    <string name="text_to_translate">Enter the text to translate</string>
+    <string name="translation">The translation will appear here</string>
+    <string name="translation_failed">Translation failed</string>
+    <string name="random_word">Random word</string>
+    <string name="languages_swapped">Swapped languages</string>
+    <string name="send_with_sms">SMS</string>
+    <string name="send_with_email">Email</string>
+    <string name="image_search_failed">Image search failed</string>
+
+    <!--  History -->
+    <string name="clear_history">Clear history</string>
+    <string name="sort">Sort</string>
+    <string name="most_recent">Most recent</string>
+    <string name="languages">Languages</string>
+    <string name="translate_from">Translate from…</string>
+    <string name="translate_to">Translate to…</string>
+    <string name="empty">No translations yet</string>
+    
+    <string name="get_images_from_google_image_search">Select Flashcard Image from Google</string>
+    <string name="save_to_deck">Save to Deck</string>
+    <string name="deck_manager">Deck Manager</string>
+
+    <string name="decks_empty">You currently do not have any decks. Please create one.</string>
+    <string name="click_to_create_a_deck">Click to create a deck</string>
+    <string name="manage_cards">Manage Cards</string>
+    
+    <string name="lesson">Lesson</string>
+</resources>

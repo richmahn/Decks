@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".CPDecksDashboardActivity" >
+
+    <ImageView
+        android:id="@+id/DashboardLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_and_tag" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/DashboardLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            android:layout_centerInParent="true" >
+
+            <LinearLayout
+                android:id="@+id/DecksButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/DecksButtonImage"
+                    android:layout_width="@dimen/dashboard_button_big_width"
+                    android:layout_height="@dimen/dashboard_button_big_height"
+                    android:src="@drawable/decks" />
+
+                <TextView
+                    android:id="@+id/DecksButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/decks_button"
+                    android:textColor="#325"
+                    android:textSize="@dimen/dashboard_button_text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/middleDivider"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/DecksButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/DashboardLeftSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DecksButton"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/middleDivider"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/WOTDButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/WOTDButtonImage"
+                        android:layout_width="@dimen/dashboard_button_width"
+                        android:layout_height="@dimen/dashboard_button_height"
+                        android:src="@drawable/word_of_the_day" />
+
+                    <TextView
+                        android:id="@+id/WOTDButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/word_of_the_day_button"
+                        android:textColor="#325"
+                        android:textSize="@dimen/dashboard_button_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/PhrasesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/PhrasesButtonImage"
+                        android:layout_width="@dimen/dashboard_button_width"
+                        android:layout_height="@dimen/dashboard_button_height"
+                        android:src="@drawable/phrases" />
+
+                    <TextView
+                        android:id="@+id/PhrasesButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phrases_button"
+                        android:textColor="#325"
+                        android:textSize="@dimen/dashboard_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DashboardRightSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DecksButton"
+                android:layout_toRightOf="@+id/middleDivider"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ListsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/ListsButtonImage"
+                        android:layout_width="@dimen/dashboard_button_width"
+                        android:layout_height="@dimen/dashboard_button_height"
+                        android:src="@drawable/lists" />
+
+                    <TextView
+                        android:id="@+id/ListsButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lists_button"
+                        android:textColor="#325"
+                        android:textSize="@dimen/dashboard_button_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TranslateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/TranslateButtonImage"
+                        android:layout_width="@dimen/dashboard_button_width"
+                        android:layout_height="@dimen/dashboard_button_height"
+                        android:src="@drawable/translate" />
+
+                    <TextView
+                        android:id="@+id/TranslateButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/translate_button"
+                        android:textColor="#325"
+                        android:textSize="@dimen/dashboard_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

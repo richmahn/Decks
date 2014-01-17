@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/phonetics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:paddingLeft="@dimen/expandable_list_item_padding_left"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5e5e5"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/toggleTranslationButton"
+                style="@style/TranslationButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/drilldownSentenceButton"
+                style="@style/DrilldownButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/playSentenceButton"
+                style="@style/SoundButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/recordSentenceButton"
+                style="@style/RecordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/playRecordSentenceButton"
+                style="@style/PlayRecordedButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/accuracyButton"
+                style="@style/AccuracyButton" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+</LinearLayout>

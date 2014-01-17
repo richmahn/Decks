@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string name="charset">UTF-8</string>
+    <string name="client_platform">Android</string>
+    <string name="client_version">0.1</string>
+<!--     <string name="host">10.0.2.2</string> -->
+    <string name="host">192.168.0.105</string>
+    <string name="api_version">v0.1</string> 
+</resources>

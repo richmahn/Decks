@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.CPod.Dashboard" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/Widget.CPod.Dashboard.ActionBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.CPod.Dashboard.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:icon">@drawable/logo</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:backgroundSplit">@android:color/white</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="Theme.CPod.BasicPage" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.CPod.BasicPage.ActionBar</item>
+    </style>
+
+    <style name="Widget.CPod.BasicPage.ActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:icon">@drawable/action_bar_logo</item>
+        <item name="android:background">@drawable/header_light</item>
+        <item name="android:backgroundSplit">@drawable/header_light</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.CPod.BasicPage.Title</item>
+        <item name="android:subtitleTextStyle">@style/TextAppearance.CPod.BasicPage.Subtitle</item>
+    </style>
+
+    <style name="TextAppearance.CPod.BasicPage.Title" parent="@android:style/TextAppearance.Holo.SearchResult.Title">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="TextAppearance.CPod.BasicPage.Subtitle" parent="@android:style/TextAppearance.Holo.SearchResult.Subtitle">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Theme.CPod.Dialog.Transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.CPod.Dialog.Login" parent="Theme.CPod.Dialog.Transparent">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Theme.CPod.Dialog.CreateVocabulary" parent="Theme.CPod.Dialog.Transparent">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    
+    <style name="BottomButton" parent="android:style/Widget.Holo.Light.Button">
+        <item name="android:layout_width">@dimen/bottom_button_layout_width</item>
+        <item name="android:layout_height">@dimen/bottom_button_layout_height</item>
+        <item name="android:layout_margin">@dimen/bottom_button_layout_margin</item>
+        <item name="android:paddingTop">@dimen/bottom_button_paddingTop</item>
+        <item name="android:textSize">@dimen/bottom_button_textSize</item>
+        <item name="android:textColor">@drawable/bottom_button_text_color</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="BlackButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/black_button_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/black_button</item>
+    </style>
+
+    <style name="TopRoundedBlackButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/top_rounded_black_button</item>
+    </style>
+
+    <style name="LeftSideRoundedBlackButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/left_side_rounded_black_button</item>
+    </style>
+
+    <style name="BlackButton2" parent="android:style/Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/black_button2_text_color</item>
+        <item name="android:background">@drawable/black_button2_background</item>
+    </style>
+
+    <style name="SmallBlackButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/small_black_button</item>
+    </style>
+
+    <style name="ChoiceLeftButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/choice_button_text_color</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/choice_button_left</item>
+    </style>
+
+    <style name="ChoiceRightButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/choice_button_text_color</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/choice_button_right</item>
+    </style>
+
+    <style name="RoundButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:background">@drawable/round_button</item>
+    </style>
+
+    <style name="SoundButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/sound_button</item>
+        <item name="android:text">@string/play</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="DrilldownButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/drilldown_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/drilldown</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="GlossaryButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/drilldown_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/glossary</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="SampleSentencesButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/drilldown_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/sentences</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TranslationButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/translation_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/translate</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="SaveButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/save</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/save</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="RecordButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/record</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/record</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="PlayRecordedButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/play_record_disabled</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/play_recorded</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="AccuracyButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/accuracy</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/accuracy</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="ReferenceLessonsButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/reference_lessons</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/reference_lessons</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="LessonButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/lesson</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/lesson</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="MoveWordButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/move_word</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/move_term</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="CopyWordButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/copy_word</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/copy_term</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="DeleteWordButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/delete_word</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/remove_term</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+    <style name="SignupDialogEditText" parent="android:style/Widget.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CreateVocabularyDialogEditText" parent="android:style/Widget.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="InputFieldLabel" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">@dimen/input_field_label_layout_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/input_field_label_textSize</item>
+        <item name="android:layout_marginLeft">@dimen/input_field_label_marginLeft</item>
+    </style>
+
+    <style name="InputField" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/input_field_textSize</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EmptyList" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <!-- custom SeekBar style -->
+    <style name="PlayBar" parent="android:style/Widget.SeekBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:thumb">@drawable/progress_thumb</item>
+        <item name="android:progressDrawable">@drawable/play_bar</item>
+        <item name="android:gravity">center</item>
+        <item name="android:max">100</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:progress">0</item>
+        <item name="android:secondaryProgress">0</item>
+        <item name="android:soundEffectsEnabled">true</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="TabButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SideBarButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sidebar_button_width</item>
+        <item name="android:layout_height">@dimen/sidebar_button_height</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/black_button</item>
+    </style>
+
+    <style name="GreenButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/green_button_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/green_button</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="HandsetLessonButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/lesson_button_layout_width</item>
+        <item name="android:layout_height">@dimen/lesson_button_layout_height</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">@dimen/lesson_button_textSize</item>
+        <item name="android:textColor">#325</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="RecordTaskButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/expandable_list_item_size</item>
+        <item name="android:layout_height">@dimen/expandable_list_item_size</item>
+        <item name="android:background">@drawable/record</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/record</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/expandable_list_item_text_size</item>
+    </style>
+
+    <style name="PlayRecordedTaskButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/expandable_list_item_size</item>
+        <item name="android:layout_height">@dimen/expandable_list_item_size</item>
+        <item name="android:background">@drawable/play_record_disabled</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/play_recorded</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/expandable_list_item_text_size</item>
+    </style>
+
+    <style name="CameraButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/expandable_list_item_size</item>
+        <item name="android:layout_height">@dimen/expandable_list_item_size</item>
+        <item name="android:background">@drawable/camera</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/camera</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/expandable_list_item_text_size</item>
+    </style>
+
+    <style name="FileButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/expandable_list_item_size</item>
+        <item name="android:layout_height">@dimen/expandable_list_item_size</item>
+        <item name="android:background">@drawable/folder</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/file</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/expandable_list_item_text_size</item>
+    </style>
+
+    <style name="Animations" />
+
+    <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.GrowFromTop">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="GrayButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/gray_button_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/gray_button</item>
+    </style>
+
+    <style name="DownloadLessonFilesButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/download_lesson_files_button</item>
+        <item name="android:padding">2dip</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF888888</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="MoveUpImageView">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight_half</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:src">@drawable/move_up</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="MoveDownImageView">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight_half</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:src">@drawable/move_down</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="RenameButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:layout_height">@dimen/sentence_word_button_widthheight</item>
+        <item name="android:background">@drawable/rename_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:text">@string/rename</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/sentence_word_button_text</item>
+    </style>
+
+</resources>

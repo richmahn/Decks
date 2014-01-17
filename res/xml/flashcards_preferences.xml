@@ -1,0 +1,48 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Flashcard Display">
+
+        <CheckBoxPreference
+                android:key="flashcards_show_target"                     
+                android:title="Show Chinese" 
+                 /> 
+
+        <CheckBoxPreference
+                android:key="flashcards_show_target_phonetics"                     
+                android:title="Show Pinyin" 
+                 />  
+        <CheckBoxPreference
+                android:key="flashcards_show_source"
+                android:title="Show English" 
+                 />           
+        <CheckBoxPreference
+                android:key="flashcards_show_image"                     
+                android:title="Show Image" 
+                 />           
+        <CheckBoxPreference
+                android:key="flashcards_show_audio"                     
+                android:title="Show Audio Play Button" 
+                 />           
+        </PreferenceCategory>
+    <PreferenceCategory
+            android:title="Flashcard Behavior">
+
+    <ListPreference
+            android:title="Time interval"
+            android:summary="Set the amount of time between each answer and card"
+            android:key="flascards_time_interval"
+            android:defaultValue="4000"
+            android:entries="@array/timeIntervalsListArray" 
+            android:entryValues="@array/timeIntervalsListValues" /> 
+            
+    <ListPreference
+            android:title="End of deck behavior"
+            android:summary="What should happen when all cards have been viewed?"
+            android:key="end_of_deck_behavior" 
+            android:entries="@array/endOfDeckListArray" 
+            android:entryValues="@array/endOfDeckListValues" /> 
+
+    </PreferenceCategory>
+</PreferenceScreen>

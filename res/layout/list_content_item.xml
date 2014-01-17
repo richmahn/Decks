@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/categoryIcon"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginTop="4px"
+        android:gravity="center"
+        android:paddingRight="10px"
+        android:src="@drawable/word_of_the_day_content" />
+
+    <TextView
+        android:id="@+id/wordTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20"
+        android:padding="@dimen/list_sentence_word_section_padding" />
+
+    <com.chinesepod.decks.view.AutoResizeTextView
+        android:id="@+id/wordTargetPhonetics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".35"
+        android:padding="@dimen/list_sentence_word_section_padding" />
+
+    <TextView
+        android:id="@+id/wordSource"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".45"
+        android:padding="@dimen/list_sentence_word_section_padding" />
+
+</LinearLayout>

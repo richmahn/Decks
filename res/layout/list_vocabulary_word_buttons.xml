@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:paddingLeft="@dimen/expandable_list_item_padding_left"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp" >
+
+            <Button
+                android:id="@+id/moveTermButton"
+                style="@style/MoveWordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/copyTermButton"
+                style="@style/CopyWordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/removeTermButton"
+                style="@style/DeleteWordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/playWordButton"
+                style="@style/SoundButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/recordSentenceButton"
+                style="@style/RecordButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/playRecordSentenceButton"
+                style="@style/PlayRecordedButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/accuracyButton"
+                style="@style/AccuracyButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/sampleSentencesButton"
+                style="@style/SampleSentencesButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween" />
+
+            <Button
+                android:id="@+id/referenceLessonButton"
+                style="@style/ReferenceLessonsButton"
+                android:layout_marginRight="@dimen/expandable_list_item_padding_inbetween"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+</LinearLayout>

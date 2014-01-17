@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionLayout="@layout/actionbar_dashboard_search"
+        android:showAsAction="always|withText"
+        android:title="Glossary Search"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_navigation_refresh"
+        android:orderInCategory="145"
+        android:showAsAction="never"
+        android:title="Refresh"/>
+
+    <group android:id="@+id/dashboardItems" >
+        <item
+            android:id="@+id/action_current_lesson"
+            android:icon="@drawable/ic_current_lesson"
+            android:showAsAction="never"
+            android:title="Current Lesson"
+            android:visible="false"/>
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_action_settings"
+            android:showAsAction="never"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/action_glossary"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Glossary"/>
+        <item
+            android:id="@+id/action_vocabulary"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Vocabulary"/>
+        <item
+            android:id="@+id/action_courses"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Courses"/>
+        <item
+            android:id="@+id/action_self_study"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Self-Study"/>
+        <item
+            android:id="@+id/action_library"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Library"/>
+        <item
+            android:id="@+id/action_messages"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="Messages"/>
+        <item
+            android:id="@+id/action_accuracy"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="@string/compare_recorded_title"
+            android:visible="false"/>
+        <item
+            android:id="@+id/action_about"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="@string/about_this_app"/>
+        <item
+            android:id="@+id/action_logout"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="@string/logout_button"/>
+        <item
+            android:id="@+id/action_create_account"
+            android:menuCategory="secondary"
+            android:showAsAction="never"
+            android:title="@string/create_account"
+            android:visible="false"/>
+    </group>
+
+</menu>

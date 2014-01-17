@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background_light"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/list_background"
+        android:cacheColorHint="@color/list_background"
+        android:groupIndicator="@drawable/blank"
+        android:indicatorLeft="0dp"
+        android:listSelector="@color/list_background_light"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/sentenceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/list_background_light"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/sentenceWordSourceAndTranslationScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".33" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/sentenceWordSource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:padding="10dp"
+                        android:text="SENENCE_WORD_SOURCE"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/sentenceWordTranslation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="SENENCE_WORD_TRANSLATION"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ExpandableListView
+                android:id="@+id/sentenceWordList"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="@color/list_background"
+                android:cacheColorHint="@color/list_background"
+                android:groupIndicator="@drawable/blank"
+                android:indicatorLeft="0dp"
+                android:listSelector="@color/list_background_light"
+                android:layout_weight=".67" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/playOpenSentenceButton"
+            style="@style/SoundButton"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@android:id/empty"
+        style="@style/EmptyList"
+        android:text="@string/dialogue_empty" />
+
+</LinearLayout>

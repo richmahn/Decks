@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add"
+        android:title="Create Deck"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action_manage_decks"
+        android:title="Manage Decks"
+        android:visible="true"/>
+</menu>

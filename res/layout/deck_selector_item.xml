@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#29512F"
+    android:padding="5dp"
+    tools:context=".CPDecksDecksActivity" >
+
+    <TextView
+        android:id="@+id/DeckTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Deck Name"
+        android:textColor="#fff"
+        android:minLines="3"
+        android:textSize="15sp" />
+    
+    <ImageView 
+        android:id="@+id/DeckIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/DeckCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/DeckTitle"
+        android:text="5"
+        android:textColor="#fff" />
+
+</RelativeLayout>

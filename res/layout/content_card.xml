@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/textScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/sampleSentencesButton"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.chinesepod.decks.view.AspectRatioByWidthImageView
+                android:id="@+id/wordImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/wordTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wordImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:text="Chinese"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wordTargetPhonetics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wordTarget"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:text="Pinyin"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/wordPlayButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/wordTargetPhonetics"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sound" />
+
+            <View
+                android:id="@+id/wordDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/wordPlayButton"
+                android:background="#AAA" />
+
+            <TextView
+                android:id="@+id/wordSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wordDivider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="English"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wordSource"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DDD"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp"
+                android:paddingTop="5dp"
+                android:text="@string/save"
+                android:textColor="#3F3F3F"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/sampleSentencesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="#AAA"
+        android:gravity="center"
+        android:text="@string/sample_sentences"
+        android:textColor="#2F2F2F"
+        android:textSize="15sp" />
+
+</RelativeLayout>

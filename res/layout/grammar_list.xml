@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/list_background_light"> 
+
+    <ExpandableListView android:id="@android:id/list"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:cacheColorHint="@color/list_background" 
+	          android:background="@color/list_background"
+	          android:listSelector="@color/list_background_light"
+              android:indicatorLeft="0dp" 
+              android:groupIndicator="@drawable/blank"/>  
+
+    
+    <TextView android:id="@android:id/empty"
+              style="@style/EmptyList"
+              android:text="@string/grammar_empty" />    
+    <RelativeLayout android:id="@+id/sentenceView"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:padding="5dp">
+    	<TextView android:id="@+id/sentenceWordSource"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" 
+	            android:layout_marginRight="50dp"
+              	android:textSize="22sp" 
+              	android:padding="10dp"  />      
+    	<TextView android:id="@+id/sentenceWordTranslation"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" 
+              	android:layout_below="@+id/sentenceWordSource"
+              	android:textSize="20sp" 
+              	android:padding="10dp"  />
+    	<ExpandableListView  android:id="@+id/sentenceWordList"
+              	android:layout_width="fill_parent"
+              	android:layout_height="wrap_content"
+              	android:layout_below="@+id/sentenceWordTranslation"
+              	android:cacheColorHint="@color/list_background_light" 
+	          	android:background="@color/list_background_light"
+              	android:indicatorLeft="0dp" 
+              	android:groupIndicator="@drawable/blank"
+              	 />
+	    <Button android:id="@+id/playOpenSentenceButton"
+	    		style="@style/SoundButton" 
+	         	android:layout_alignParentRight="true" />
+    </RelativeLayout>           
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <!-- Login dialog  -->
+    <dimen name="login_dialog_margin_top">30dp</dimen>
+    <dimen name="login_dialog_margin_right">30dp</dimen>
+    <dimen name="login_dialog_height">280dp</dimen>
+    <dimen name="login_dialog_width">650dp</dimen> 
+    
+     
+    
+    
+    <dimen name="flashcard_side_margin">250dp</dimen> 
+        
+</resources>

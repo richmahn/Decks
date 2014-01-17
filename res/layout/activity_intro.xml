@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".CPDecksIntroActivity" >
+
+    <ImageView
+        android:id="@+id/DashboardLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_and_tag" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/DashboardLogo"
+        android:layout_above="@+id/indicator"
+        />
+    <com.viewpagerindicator.CirclePageIndicator
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/StartButton"
+        app:radius="5dp"
+        app:fillColor="#FF000000"
+        app:pageColor="#88CCCCCC"
+        app:strokeColor="#FFCCCCCC"
+        app:strokeWidth="1dp"
+        />
+
+    <Button
+        android:id="@+id/StartButton"
+        style="@style/CustomButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button_red"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/start"
+        android:textSize="20sp" />
+
+</RelativeLayout>

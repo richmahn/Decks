@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/languageSelectBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@color/red" >
+
+        <ImageView
+            android:id="@+id/swapLanguagesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/hl_av_repeat" />
+
+        <Button
+            android:id="@+id/sourceLanguageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/swapLanguagesButton"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+        <Button
+            android:id="@+id/targetLanguageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/swapLanguagesButton"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/languageDisplayBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/red" >
+
+    	<ImageView
+    	    android:id="@+id/languageArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/translate_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/languageArrow"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="English"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/languageArrow"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="Chinese"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sourceLanguageBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/languageDisplayBar"
+        android:layout_margin="10dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/sourceAudioPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/sound_gray"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sourceLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/gray"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/sourceAudioPlayButton" />
+
+        <TextView
+            android:id="@+id/sourceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sourceLanguage"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/sourceAudioPlayButton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/targetLanguageBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceLanguageBar"
+        android:layout_margin="10dp"
+        android:visibility="invisible" >
+
+        <View
+            android:id="@+id/sourceAndTargetDividerLine"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/targetAudioPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sourceAndTargetDividerLine"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/sound_gray"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/targetLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sourceAndTargetDividerLine"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@+id/targetAudioPlayButton" />
+
+        <TextView
+            android:id="@+id/targetText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/targetLanguage"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/targetAudioPlayButton" />
+
+        <TextView
+            android:id="@+id/targetPhonetics"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/targetText"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/targetAudioPlayButton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inputTextBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actionBar" >
+
+        <ImageView
+            android:id="@+id/clearSourceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/hl_navigation_cancel" />
+
+        <EditText
+            android:id="@+id/sourceInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/translateButton"
+            android:layout_toRightOf="@+id/clearSourceButton"
+            android:hint="@string/text_to_translate"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/translateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/hl_social_send_now" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/speechRecognitionButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hl_device_access_mic" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/imageSelectPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/inputTextBar"
+        android:layout_below="@+id/targetLanguageBar"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/showGoogleImageResultsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputTextBar"
+        android:text="@string/get_images_from_google_image_search"
+        android:visibility="gone" />
+
+</RelativeLayout>

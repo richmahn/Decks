@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:addStatesFromChildren="true"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/deck_card_background" >
+
+            <ScrollView
+                android:id="@+id/FlaschardScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    android:id="@+id/FlashcardFront"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.chinesepod.decks.view.AspectRatioByWidthImageView
+                        android:id="@+id/wordImageFront"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/firstRowFront"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="130sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/secondRowFront"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/thirdRowFront"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/wordPlayButtonFront"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/sound"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FlashcardBack"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/deck_card_background" >
+
+            <ScrollView
+                android:id="@+id/FlaschardScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/firstRowBack"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="130sp"
+                        android:textStyle="bold" />
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/secondRowBack"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                    <com.chinesepod.decks.view.AutoResizeTextView
+                        android:id="@+id/thirdRowBack"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/wordPlayButtonBack"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sound" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>

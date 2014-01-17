@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login dialog  -->
+    <dimen name="login_dialog_margin_top">30dp</dimen>
+    <dimen name="login_dialog_margin_right">0dp</dimen>
+    <dimen name="login_dialog_height">200dp</dimen>
+    <dimen name="login_dialog_width">275dp</dimen>
+
+    <dimen name="login_dialog_label_margin_top">45dp</dimen>
+    <dimen name="login_dialog_field_margin_top">40dp</dimen>
+    <dimen name="login_dialog_field_margin_right">10dp</dimen>
+    <dimen name="login_dialog_text">22sp</dimen>
+    <dimen name="login_dialog_login_button_margin_bottom">10dp</dimen>
+    <dimen name="login_dialog_forgot_password_text">20sp</dimen>
+    <dimen name="login_dialog_cancel_button_width">40dp</dimen>
+    <dimen name="login_dialog_login_button_text">23sp</dimen>
+    
+    <!-- Lesson activity -->
+    <dimen name="lesson_introduction_height">280dp</dimen>
+    <dimen name="lesson_buttons_width">180dp</dimen>
+    <dimen name="seekbar_width">180dp</dimen>
+
+    <dimen name="lesson_button_layout_height">120dp</dimen>
+    <dimen name="lesson_button_layout_width">107dp</dimen>
+    <dimen name="lesson_button_textSize">13sp</dimen>
+    <dimen name="lesson_button_markstudied_textSize">10sp</dimen>
+
+    <dimen name="lesson_handset_image_height">200dp</dimen>
+
+	<dimen name="lesson_list_text">18sp</dimen>
+    
+    <!-- Input field label  -->
+    <dimen name="input_field_label_layout_width">110dp</dimen> 
+    <dimen name="input_field_label_textSize">15sp</dimen>
+    <dimen name="input_field_label_marginLeft">20sp</dimen>
+    
+    
+    <!-- Input field  -->  
+    <dimen name="input_field_textSize">16sp</dimen>
+
+    <!-- Other -->
+    <dimen name="self_study_filter_text">15sp</dimen>
+    <dimen name="sentence_word_button_widthheight">70dp</dimen>
+    <dimen name="sentence_word_button_widthheight_half">35dp</dimen>
+    <dimen name="sentence_word_button_text">12dp</dimen>
+    
+     <dimen name="studied_indicator_listpage_width">20dp</dimen>
+     <dimen name="studied_indicator_listpage_height">20dp</dimen>
+     <dimen name="studied_indicator_lessonpage_width">30dp</dimen>
+     <dimen name="studied_indicator_lessonpage_height">30dp</dimen>
+     
+     <dimen name="bookmarked_indicator_listpage_width">20dp</dimen>
+     <dimen name="bookmarked_indicator_listpage_height">20dp</dimen>
+     <dimen name="bookmarked_indicator_lessonpage_width">30dp</dimen>
+     <dimen name="bookmarked_indicator_lessonpage_height">30dp</dimen>
+     
+	 <dimen name="current_lesson_tab_text">20sp</dimen>
+	 
+    <dimen name="dashboard_button_text">18sp</dimen>
+	<dimen name="dashboard_avatar_width">60dp</dimen>
+	<dimen name="dashboard_avatar_height">60dp</dimen>
+	<dimen name="dashboard_button_width">100dp</dimen>
+	<dimen name="dashboard_button_height">100dp</dimen>
+    <dimen name="dashboard_button_big_width">115dp</dimen>
+    <dimen name="dashboard_button_big_height">115dp</dimen>
+</resources>

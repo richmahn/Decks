@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" > 
+
+    <SearchView 
+        android:id="@+id/searchGlossary"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="44dp"
+    	android:iconifiedByDefault="false"
+    	/>
+
+              
+    <RelativeLayout android:id="@+id/sentenceView"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:background="@color/list_background_light" 
+              android:visibility="gone" >
+              
+	   	<TextView 	android:id="@+id/sentenceWordSource"
+	             	android:layout_width="wrap_content"
+	             	android:layout_height="wrap_content" 
+	             	android:textSize="18sp" 
+	             	android:textStyle="bold"
+	             	android:padding="10dp" 
+	             	android:layout_marginTop="10dp"
+	             	android:layout_centerHorizontal="true" />
+	   	
+	   	<TextView 	android:id="@+id/sentenceWordPhonetics"
+	             	android:layout_width="wrap_content"
+	             	android:layout_height="wrap_content" 
+	             	android:textSize="17sp" 
+	             	android:padding="10dp"
+	             	android:layout_centerHorizontal="true" 
+	             	android:layout_below="@+id/sentenceWordSource" />
+	   	
+	   	<TextView 	android:id="@+id/sentenceWordTranslation"
+	             	android:layout_width="wrap_content"
+	             	android:layout_height="wrap_content" 
+	             	android:textSize="17sp" 
+	             	android:padding="10dp"
+	             	android:layout_centerHorizontal="true" 
+	             	android:layout_below="@+id/sentenceWordPhonetics" />
+	   	
+	    <Button 	android:id="@+id/playOpenSentenceButton"
+	        		style="@style/SoundButton" 
+              		android:layout_centerHorizontal="true"
+	             	android:layout_below="@+id/sentenceWordTranslation" />
+   	    	
+	    <ExpandableListView android:id="@+id/sentenceWordList"
+	              	android:layout_width="fill_parent"
+	              	android:layout_height="fill_parent" 
+	              	android:cacheColorHint="@color/list_background" 
+		          	android:background="@color/list_background"
+		          	android:listSelector="@color/list_background_light" 
+	              	android:indicatorLeft="0dp" 
+	              	android:groupIndicator="@drawable/blank"
+              		android:layout_marginTop="5dp" 
+	             	android:layout_below="@+id/playOpenSentenceButton"  /> 
+              
+    </RelativeLayout>
+              
+    <RelativeLayout android:id="@+id/termView"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" 
+              android:background="@color/list_background_light"  >
+
+			 
+    	<TextView android:id="@+id/termOrigin"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" 
+	            android:textSize="18sp" 
+	            android:textStyle="bold"
+              	android:padding="5dp"
+              	android:layout_centerHorizontal="true"
+              	android:layout_marginTop="10dp"  />
+    	
+    	<TextView android:id="@+id/termPhonetics"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" 
+              	android:textSize="17sp" 
+              	android:padding="5dp" 
+              	android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/termOrigin"  />
+    	
+    	<TextView android:id="@+id/termTranslation"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content" 
+              	android:textSize="17sp" 
+              	android:padding="5dp" 
+              	android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/termPhonetics"  />
+             		
+	    <Button android:id="@+id/playTermButton"
+	        	style="@style/SoundButton" 
+              	android:layout_centerHorizontal="true"
+	            android:layout_below="@+id/termTranslation"
+	            android:visibility="invisible"
+	              />
+    	
+    	<Button 
+    	    android:id="@+id/saveButton"
+    	    style="@style/GreenButton" 
+    	    android:layout_below="@+id/playTermButton"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_margin="5dp"
+	        android:visibility="invisible"
+    	    android:text="@string/glossary_save"/>
+    	
+    	<TextView android:id="@+id/sampleSentences"
+              	android:layout_width="fill_parent"
+              	android:layout_height="wrap_content"
+              	android:background="#bbb" 
+              	android:textStyle="bold"
+              	android:textSize="@dimen/glossary_samples_text_size" 
+              	android:padding="5dp"  
+              	android:text="@string/sample_sentences"
+	            android:layout_below="@+id/saveButton"
+	            android:visibility="invisible"   />
+    	
+    	<com.chinesepod.decks.view.VerticalButton 
+    	    android:id="@+id/moreResults"
+    	    style="@style/GrayButton"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignBaseline="@+id/termTranslation"
+    	    android:layout_marginRight="20dp"
+    	    android:paddingLeft="5dp"
+    	    android:paddingRight="5dp"
+    	    android:visibility="invisible"
+    	    android:text="@string/glossary_more"/>
+    	
+    	<TextView android:id="@+id/resultsCount"
+              	android:layout_width="wrap_content"
+              	android:layout_height="wrap_content"
+              	android:textSize="13sp" 
+              	android:textStyle="bold" 
+              	android:layout_alignLeft="@+id/moreResults"
+              	android:layout_alignRight="@+id/moreResults" 
+    	    	android:layout_alignBaseline="@+id/saveButton"
+	            android:gravity="center" 
+	            android:visibility="invisible"   />
+    	
+    	<ExpandableListView  android:id="@android:id/list"
+              	android:layout_width="fill_parent"
+              	android:layout_height="wrap_content"
+             	android:cacheColorHint="@android:color/white" 
+                android:background="@color/list_background"
+             	android:indicatorLeft="0dp" 
+             	android:groupIndicator="@drawable/blank"
+	            android:layout_below="@+id/sampleSentences"  />     
+	    <LinearLayout 
+		    	android:id="@+id/progressIndicator"
+              	android:layout_width="fill_parent"
+              	android:layout_height="wrap_content"
+	            android:layout_below="@+id/sampleSentences"
+              	android:layout_marginTop="5dp" 
+	    		android:gravity="center"
+	    		android:visibility="invisible" >
+	 			<ProgressBar 
+	    			android:layout_width="50dp"
+	    			android:layout_height="50dp" 
+	    			android:visibility="visible"/>
+	 	</LinearLayout>
+
+	    <LinearLayout android:id="@+id/emptyResponse"
+			android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="invisible"
+			android:layout_gravity="center">
+	    
+	    	<TextView
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"  
+	              android:text="@string/sample_sentences_no_result"
+				  android:layout_marginLeft="100dp"
+				  android:layout_marginRight="100dp"
+				  android:layout_marginTop="100dp"
+				  android:layout_marginBottom="150dp"
+			      android:textSize="@dimen/courses_no_courses_text_size"
+				  android:gravity="center"
+				  android:layout_gravity="center"
+				  android:textColor="#abc"
+	              android:textStyle="bold"   />    
+		</LinearLayout>
+    </RelativeLayout> 
+
+</LinearLayout>

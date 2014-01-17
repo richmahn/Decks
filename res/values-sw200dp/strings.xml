@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="add_comment">Comment</string>
+    <string name="reply_to_this_post">Reply</string>
+    
+    <string name="mark_as_studied">Mark Studied</string> 
+    <string name="mark_as_unstudied">Mark Un-Studied</string> 
+    
+    <string name="search_glossary">Glossary…</string>
+</resources>

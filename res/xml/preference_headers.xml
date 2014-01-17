@@ -1,0 +1,23 @@
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <header android:fragment="com.chinesepod.decks.CPDecksSettingsActivity$GeneralSettingsFragment"
+            android:title="General"
+            android:summary="General settings." />
+
+    <header android:fragment="com.chinesepod.decks.CPDecksSettingsActivity$NotificationSettingsFragment"
+             
+            android:title="Notifications"
+            android:summary="Customize the notifications you would like to receive." />
+
+    <header android:fragment="com.chinesepod.decks.fragment.settings.FlashcardsSettingsFragment"
+             
+            android:title="Flashcards"
+            android:summary="Customize flashcard parameters." />
+     
+
+    <header android:fragment="com.chinesepod.decks.fragment.settings.SearchSettingsFragment"
+             
+            android:title="Search"
+            android:summary="Customize lesson search parameters." />
+</preference-headers>

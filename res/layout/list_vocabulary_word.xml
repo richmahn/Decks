@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+	android:paddingTop="5dp"
+	android:paddingBottom="5dp"
+	android:paddingLeft="10dp"
+    android:background="@drawable/list_selector"  
+              > 
+	<TextView 
+		android:id="@+id/wordTarget"
+    	android:layout_width="@dimen/list_sentence_word_section_width"
+    	android:layout_height="wrap_content" 
+    	android:textSize="@dimen/list_sentence_word_section_text_size" 
+    	android:padding="@dimen/list_sentence_word_section_padding"
+    	android:layout_alignParentLeft="true"
+    	/>
+	<TextView 
+		android:id="@+id/wordTargetPhonetics"
+    	android:layout_width="@dimen/list_sentence_word_section_width"
+    	android:layout_height="wrap_content" 
+    	android:textSize="@dimen/list_sentence_word_section_text_size"  
+    	android:padding="@dimen/list_sentence_word_section_padding"
+    	android:layout_toRightOf="@+id/wordTarget"
+    	/>
+	<TextView 
+		android:id="@+id/wordSource"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:textSize="@dimen/list_sentence_word_section_text_size"  
+    	android:padding="@dimen/list_sentence_word_section_padding"
+    	android:layout_toRightOf="@+id/wordTargetPhonetics" 
+    	/>
+      
+</RelativeLayout>

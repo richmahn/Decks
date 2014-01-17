@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1"
+    tools:context=".CPDecksDecksActivity" >
+
+    <RelativeLayout
+        android:id="@+id/LargeDeck"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight=".3"
+        android:background="@color/dark_red"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/DeckTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Deck Name"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DeckCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="5"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/SmallDecksGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+		android:layout_margin="15dp"        
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ChinesePod Logo  -->
+    <dimen name="chinesepod_logo_textSize">22sp</dimen>
+    
+    <!-- Login dialog  -->
+    <dimen name="login_dialog_margin_top">50dp</dimen>
+    <dimen name="login_dialog_margin_right">0dp</dimen>
+    <dimen name="login_dialog_height">260dp</dimen>
+    <dimen name="login_dialog_width">356dp</dimen>
+    
+    <dimen name="login_dialog_label_margin_top">45dp</dimen>
+    <dimen name="login_dialog_field_margin_top">40dp</dimen>
+    <dimen name="login_dialog_field_margin_right">10dp</dimen>
+    <dimen name="login_dialog_text">22sp</dimen>
+    <dimen name="login_dialog_login_button_margin_bottom">10dp</dimen>
+    <dimen name="login_dialog_forgot_password_text">20sp</dimen>
+    <dimen name="login_dialog_cancel_button_width">40dp</dimen>
+    <dimen name="login_dialog_login_button_text">23sp</dimen>
+    
+    <!-- Signup dialog  -->
+    <dimen name="signup_dialog_width">700dp</dimen>
+    <dimen name="signup_dialog_height">500dp</dimen>
+    
+    <!-- Bottom buttons  -->
+    <dimen name="bottom_button_min_height">10dp</dimen>
+    <dimen name="bottom_button_layout_width">160dp</dimen>
+    <dimen name="bottom_button_layout_height">180dp</dimen>
+    <dimen name="bottom_button_layout_margin">10dp</dimen>
+    <dimen name="bottom_button_paddingTop">10dp</dimen>
+    <dimen name="bottom_button_paddingLeft">12dp</dimen>
+    <dimen name="bottom_button_textSize">17sp</dimen>
+    
+    <!-- Input field label  -->
+    <dimen name="input_field_label_layout_width">110dp</dimen> 
+    <dimen name="input_field_label_textSize">15sp</dimen>
+    <dimen name="input_field_label_marginLeft">20sp</dimen>
+    
+    <!-- Input field  -->  
+    <dimen name="input_field_textSize">16sp</dimen>
+    
+        
+    <!-- Avatar preferences  -->  
+    <dimen name="avatar_pref_textSize">16sp</dimen>
+    <dimen name="avatar_pref_text_marginLeft">20dp</dimen>
+    <dimen name="avatar_pref_button_layout_width">300dp</dimen>
+    <dimen name="avatar_pref_3buttons_layout_width">100dp</dimen>
+    <dimen name="avatar_pref_3buttons_textSize">14sp</dimen>
+    
+    <!-- Courses Activity -->
+    <dimen name="courses_coverflow_width">250dp</dimen>
+    <dimen name="courses_coverflow_height">265dp</dimen>
+    <dimen name="course_title_text_size">26dp</dimen>
+    <dimen name="course_download_button_padding">5dp</dimen>
+    <dimen name="course_download_button_padding_sides">15dp</dimen>
+    <dimen name="course_introduction_text_size">22dp</dimen>       
+    <dimen name="course_download_button_margin">8dp</dimen>
+
+    <!-- Course lessons activity -->
+    <dimen name="course_image_width">300dp</dimen>
+    <dimen name="course_image_height">300dp</dimen>
+    <dimen name="course_introduction_height">300dp</dimen>     
+       
+    <!-- Lesson activity -->
+    <dimen name="lesson_image_width">640dp</dimen>
+    <dimen name="lesson_image_height">480dp</dimen>
+    <dimen name="lesson_introduction_height">280dp</dimen>
+    <dimen name="lesson_buttons_width">180dp</dimen>
+    <dimen name="seekbar_width">360dp</dimen>
+
+    <dimen name="lesson_button_layout_width">70dp</dimen>
+    <dimen name="lesson_button_layout_height">80dp</dimen>
+    <dimen name="lesson_button_textSize">11sp</dimen>
+    <dimen name="lesson_button_markstudied_textSize">10sp</dimen>
+    
+    <dimen name="flashcard_side_margin">120dp</dimen> 
+    <dimen name="flashcard_side_padding">0dp</dimen> 
+    
+    <!-- Deck -->
+    <dimen name="deck_margin_top">30dp</dimen>
+    <dimen name="deck_margin_bottom">0dp</dimen>
+    <dimen name="deck_title_text_size">22dp</dimen>
+    <dimen name="deck_volume_text_size">19dp</dimen>
+    <dimen name="deck_grid_column_width">250dp</dimen>
+    
+    <dimen name="flashcard_margin_top_top">5dp</dimen>
+    <dimen name="flashcard_margin_top">20dp</dimen>
+    <dimen name="flashcard_translation_size_text">24dp</dimen>
+    <dimen name="flashcard_translation_margin_top">10dp</dimen>
+    <dimen name="flashcard_translation_margin_bottom">10dp</dimen>
+    <dimen name="flashcard_translation_padding">20dp</dimen>
+    
+    <!-- Logo -->
+    <dimen name="logo_margin_left">5dp</dimen>
+    <dimen name="logo_margin_top">20dp</dimen>
+        
+      
+    <!-- Sentence list -->
+    <dimen name="list_sentence_origin_word_width">160dp</dimen>
+    <dimen name="list_sentence_pinyin_width">160dp</dimen>
+    <dimen name="list_sentence_translation_width">160dp</dimen>  
+    
+    <!-- Handset Lesson Activity -->
+    <dimen name="lesson_handset_introduction_text_size">24dp</dimen>
+    <dimen name="lesson_handset_introduction_height">400dp</dimen>
+    
+    <!-- Handset Lesson Player Activity -->
+    <dimen name="lesson_handset_player_image_height">390dp</dimen>
+    
+  	<dimen name="list_sentence_word_section_width">220dp</dimen>
+  	<dimen name="list_sentence_word_section_text_size">20dp</dimen>
+  	<dimen name="list_sentence_word_section_padding">5dp</dimen>
+    
+     <!-- Expandable list items -->
+     <dimen name="expandable_list_item_padding_left">50dp</dimen>
+     <dimen name="expandable_list_item_padding_inbetween">30dp</dimen>
+
+    <dimen name="dashboard_button_text">30sp</dimen>
+	<dimen name="dashboard_avatar_width">100dp</dimen>
+	<dimen name="dashboard_avatar_height">100dp</dimen>
+	<dimen name="dashboard_button_width">190dp</dimen>
+	<dimen name="dashboard_button_height">190dp</dimen>
+</resources>

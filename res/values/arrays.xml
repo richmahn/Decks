@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string-array name="orientationListArray">
+   <item>Portrait</item>
+   <item>Landscape</item>
+   <item>Sensor</item>
+</string-array>
+<string-array name="orientationListValues">
+   <item>portrait</item>
+   <item>landscape</item>
+   <item>sensor</item>
+</string-array>
+
+<string-array name="timeIntervalsListArray">
+   <item>1 second</item>
+   <item>2 seconds</item>
+   <item>3 seconds</item>
+   <item>4 seconds</item>
+   <item>5 seconds</item>
+   <item>10 seconds</item>
+   <item>20 seconds</item>
+</string-array>
+<string-array name="timeIntervalsListValues">
+   <item>1000</item>
+   <item>2000</item>
+   <item>3000</item>
+   <item>4000</item>
+   <item>5000</item>
+   <item>10000</item>
+   <item>20000</item>
+</string-array> 
+ 
+<string-array name="endOfDeckListArray">
+   <item>Stop</item>
+   <item>Shuffle and stop</item>
+   <item>Shuffle the deck and restart at the beginning</item> 
+   <item>Restart at the beginning</item>
+</string-array>
+<string-array name="endOfDeckListValues">
+   <item>stop</item>
+   <item>shuffle_and_stop</item>
+   <item>shuffle_and_restart</item> 
+   <item>restart</item>
+</string-array>
+
+<string-array name="whatToShowFirstArray">
+   <item>Characters</item>
+   <item>Pinyin</item>
+   <item>English</item> 
+   <item>Audio</item>
+   <item>Image</item> 
+</string-array>
+<string-array name="whatToShowFirstValues">
+   <item>0</item> 
+   <item>1</item> 
+   <item>2</item> 
+   <item>3</item> 
+   <item>4</item> 
+</string-array>
+
+<array name="DeckGridColorsOrder">
+    <item>@color/black</item>
+    <item>@color/red</item>
+    <item>@color/gray</item>
+    <item>@color/dark_red</item>
+</array>
+
+<string-array name="DeckIconDrawables">
+	<item>abacus</item>
+	<item>accesdenied</item>
+	<item>addressbook</item>
+	<item>airplane</item>
+	<item>alarmbell</item>
+	<item>alarmclock</item>
+	<item>alert</item>
+	<item>alert2</item>
+	<item>android</item>
+	<item>applications</item>
+	<item>arrowdown</item>
+	<item>arrowleft</item>
+	<item>arrowright</item>
+	<item>arrowup</item>
+	<item>balloons</item>
+	<item>bandaid</item>
+	<item>bargraph</item>
+	<item>battery</item>
+	<item>billsstack</item>
+	<item>book</item>
+	<item>bookmark</item>
+	<item>buildings</item>
+	<item>calculator</item>
+	<item>calendar</item>
+	<item>camera</item>
+	<item>car</item>
+	<item>cart</item>
+	<item>chair</item>
+	<item>chart</item>
+	<item>chemical</item>
+	<item>cloud</item>
+	<item>computer</item>
+	<item>construction</item>
+	<item>createwrite</item>
+	<item>dogtags</item>
+	<item>dribbble</item>
+	<item>dropbox</item>
+	<item>dvd</item>
+	<item>exit</item>
+	<item>eyedropper</item>
+	<item>favorite</item>
+	<item>filmcamera</item>
+	<item>filmstrip</item>
+	<item>flag</item>
+	<item>footprints</item>
+	<item>gear</item>
+	<item>gears</item>
+	<item>gkey</item>
+	<item>globe</item>
+	<item>globe2</item>
+	<item>graph</item>
+	<item>group</item>
+	<item>harddisk</item>
+	<item>headphones</item>
+	<item>heart</item>
+	<item>help</item>
+	<item>home</item>
+	<item>hourglass</item>
+	<item>ichat</item>
+	<item>image</item>
+	<item>images</item>
+	<item>ipad</item>
+	<item>iphone</item>
+	<item>ipodnano</item>
+	<item>ipodshuffle</item>
+	<item>key</item>
+	<item>keyboard</item>
+	<item>lamp</item>
+	<item>laptop</item>
+	<item>leaf</item>
+	<item>lightbulb</item>
+	<item>link</item>
+	<item>link2</item>
+	<item>linux</item>
+	<item>list</item>
+	<item>listwimages</item>
+	<item>locked</item>
+	<item>mail</item>
+	<item>map</item>
+	<item>marker</item>
+	<item>medicalcase</item>
+	<item>megaphone</item>
+	<item>microphone</item>
+	<item>mobilephone</item>
+	<item>musicalkeyboard</item>
+	<item>musicfolder</item>
+	<item>notebook</item>
+	<item>paintbrush</item>
+	<item>paperclip</item>
+	<item>pencil</item>
+	<item>phone</item>
+	<item>phonehook</item>
+	<item>piggybank</item>
+	<item>platediner</item>
+	<item>plug</item>
+	<item>power</item>
+	<item>presentation</item>
+	<item>preview</item>
+	<item>pricetag</item>
+	<item>printer</item>
+	<item>recycle</item>
+	<item>robot</item>
+	<item>ruler</item>
+	<item>safari</item>
+	<item>scanlabel</item>
+	<item>scissors</item>
+	<item>shades</item>
+	<item>shoppingbag</item>
+	<item>shoppingbasket</item>
+	<item>shoppingcart</item>
+	<item>signpost</item>
+	<item>sound</item>
+	<item>speechbubble</item>
+	<item>speechbubbles</item>
+	<item>stopwatch</item>
+	<item>suitcase</item>
+	<item>tag</item>
+	<item>tools</item>
+	<item>trashcan</item>
+	<item>tree</item>
+	<item>truck</item>
+	<item>umbrella</item>
+	<item>user</item>
+	<item>usercomment</item>
+	<item>users</item>
+	<item>vcard</item>
+	<item>wineglass</item>
+  </string-array>
+  
+ <string-array name="IntroImages">
+     <item>intro01</item>
+     <item>intro02</item>
+     <item>intro03</item>
+     <item>intro04</item>
+ </string-array>
+
+ <string-array name="IntroText">
+     <item>Flashcards at your fingertips</item>
+     <item>Timely word-of-the-day</item>
+     <item>Topic-based word lists</item>
+     <item>Handy phrase book</item>
+ </string-array>
+</resources>

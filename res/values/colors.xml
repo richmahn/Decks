@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="focused">#000</drawable>
+    <drawable name="selected">#828991</drawable>
+    <drawable name="focused_light">#828991</drawable>
+    <drawable name="selected_light">#ffffff</drawable>
+    <drawable name="pressed_light">#e8e8e8</drawable>
+    <drawable name="pressed">#444</drawable>
+    <drawable name="lesson_item_focused">#888</drawable>
+    <drawable name="lesson_item_selected">#eee</drawable>
+    <drawable name="lesson_item_selected_focused">#aaa</drawable>
+    <drawable name="lesson_item_pressed">#bbb</drawable>
+    <drawable name="lesson_item_normal">#00000000</drawable>
+    <drawable name="lesson_introduction_focused">#aaa</drawable> 
+    <drawable name="lesson_introduction_normal">#00ffffff</drawable>
+    <drawable name="seekbar_focused">#aaa</drawable> 
+    <drawable name="seekbar_normal">#fff</drawable>
+    <drawable name="lesson_tab_normal">#e6e6e6</drawable>
+    <color name="lesson_type_button_selected">#f0f0f0</color>
+    <color name="lesson_type_button_unselected">#999999</color>
+    <color name="lesson_tab_unselected">#555</color>
+    <color name="lesson_tab_selected">#ffffff</color>
+    <color name="lesson_tab_unselected_text">#fff</color>
+    <color name="lesson_tab_selected_text">#555</color>
+    <color name="list_background_light">#ffffff</color>
+    <color name="list_background">#f2f2f2</color>
+    <color name="gray_line">#828991</color>
+    <color name="vertical_line">#cccccc</color>
+    <drawable name="expansion_grammar_header">#eff4f9</drawable>
+    <drawable name="blank">#00ffffff</drawable>
+    <color name="grey_text">#333</color>
+    <color name="retrieve_password_link">#2B9CFF</color>
+    <color name="lesson_scroll_label_background">#FF0000</color>
+    <color name="lesson_scroll_label_text">#FFFFFF</color>
+    <color name="scrollview_arrow_text">#174187</color>
+	<color name="scrollview_arrow_background">#e0f0f0f0</color>
+    <color name="scrollview_arrow">#e0f0f0f0</color>
+	<drawable name="secondary_header_bg">#d0d7e0</drawable>
+	<drawable name="about_background">#ffffff</drawable>
+    <drawable name="bg_color">#19447c</drawable>
+    <color name="lesson_item_selected_bg">#eff4f9</color>
+    <color name="show_translation_hidden">#111199</color>
+    <color name="secondary_header_background">#ffffff</color>
+    <color name="ol_blue_color">#174187</color>
+    <color name="cp_red_color">#FF0000</color>
+
+    <color name="comments_reply_background_color">#EEE</color>
+    <color name="comments_username_color">#C00</color>
+    <color name="comments_info_color">#888</color>
+    
+    <color name="lesson_list_selected_background">#999</color>
+    <color name="lesson_list_loaded_lesson">#FFFFFF</color>
+    <color name="lesson_list_not_loaded_lesson">#F5F5F5</color>
+    <color name="lesson_list_current_lesson_background">#FF918C</color>
+    
+    <color name="green">#007F0E</color>
+    <color name="light_grey_text">#F0F0F0</color>
+    
+    <color name="dark_transparent">#80000000</color>
+    
+    <color name="dashboard_button_text">#000000</color>
+    <color name="deck_background_color">#AAAAAA</color>
+    
+    <color name="grayish_blue">#4478A7</color>
+    <color name="dark_blue">#195383</color>
+    <color name="dark_green">#29512F</color>
+    <color name="light_green">#559360</color>
+    <color name="yellow">#EAB13D</color>
+    <color name="orange">#BB612F</color>
+    <color name="gray">#828282</color>
+    <color name="dark_red">#B7262D</color>
+    <color name="red">#CA6C4D</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="@dimen/flashcard_side_padding"
+        android:paddingRight="@dimen/flashcard_side_padding" >
+
+        <TextView
+            android:id="@+id/wordSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Chinese"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wordPinyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Pinyin"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wordTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="English"
+            android:textSize="@dimen/flashcard_translation_size_text" />
+        <Button
+            android:id="@+id/wordPlayButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sound" />
+
+        <TextView
+            android:id="@+id/tapToShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/flashcard_translation_size_text" />
+        
+        <com.chinesepod.decks.view.FlowLayout xmlns:f="http://schemas.android.com/apk/res/com.chinesepod.decks"
+        android:id="@+id/ButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        f:horizontalSpacing="6dp"
+        f:verticalSpacing="12dp" >
+
+        <Button
+            android:id="@+id/removeTermButton"
+            style="@style/SmallBlackButton"
+            android:gravity="center"
+            android:text="@string/remove_term"
+            android:textColor="#FFFFFF" />
+    </com.chinesepod.decks.view.FlowLayout>
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sample_sentences"
+        android:title="@string/sample_sentences"/>
+    <item
+        android:id="@+id/save_to_deck"
+        android:title="@string/save_to_deck"/>
+    <item
+        android:id="@+id/show_history"
+        android:alphabeticShortcut="h"
+        android:title="@string/show_history"/>
+    <item
+        android:id="@+id/send_with_sms"
+        android:title="@string/send_with_sms"/>
+    <item
+        android:id="@+id/send_with_email"
+        android:title="@string/send_with_email"/>
+
+</menu>
